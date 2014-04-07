@@ -6,14 +6,14 @@
 <head>
 </head>
 <body>
-	<div id="videocontainer">
-		<!-- inject video content here -->
+	<div id="myvideo">
+		<video src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4"></video>
 	</div>
-
+	<!-- http://www.quirksmode.org/html5/tests/video.html -->
 	<script type="text/javascript" src="lib/jquery1.11.0.js"></script>
-	<script type="text/javascript" src="js/zplayer.js" defer></script>
+	<script type="text/javascript" src="js/zplayer.js"></script>
 	<script type="text/javascript">
-		
+		$('#myvideo').zplayer();
 	</script>
 </body>
 </html>
