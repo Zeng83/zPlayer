@@ -9,7 +9,7 @@
 
 			var $video_wrap = $('<div></div>').addClass('videoContainer');
 
-			var $video_controls = $('<div class="video-controls"><div class="video-seek"></div><a class="video-play" title="Play/Pause"></a><div class="video-timer">00:00</div><div class="volume-box"><div class="volume-slider"></div><a class="volume-button" title="Mute/Unmute"></a></div></div>');
+			var $video_controls = $('<div class="video-controls"><div class="video-seek"></div><div class="video-play pause" title="Play/Pause"></div><div class="video-timer">00:00</div><div id="user-tools"><div class="fullscreenIcon"></div><div class="video-speed"></div><div class="video-resolution"></div><div class="volume-box"><div class="volume-slider"></div><a class="volume-button" title="Mute/Unmute"></a></div></div></div>');
 
 			$zVideo.wrap($video_wrap);
 			$zVideo.after($video_controls);
