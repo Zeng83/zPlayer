@@ -23,7 +23,7 @@
 			var $volume = $('.volume-slider', $video_container);
 			var $volume_btn = $('.volume-button', $video_container);
 
-			$video_controls.hide(); // keep the controls hidden
+			// $video_controls.hide(); // keep the controls hidden
 		});
 
 	};

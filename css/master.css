@@ -474,3 +474,76 @@ dt {
 dd {
   margin-left: 0;
 }
+.videoContainer {
+  position: relative;
+  display:block;
+  height: auto;
+  background-color: #000;
+}
+#myvideo video {
+  color: #fff;
+  width: 100%;
+}
+.video-controls {
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  margin: -4px 0;
+  height: 45px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  background: #000;
+  opacity:1;
+}
+
+.video-seek {
+  display:block;
+  width:100%;
+  position:absolute;
+  display:block;
+  bottom:35px;
+  left:0;
+  height: 10px;
+  opacity:0.9;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.65);
+  background-color: #8C1515;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C1515', endColorstr='#820000'); /* for IE */
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8c1515), color-stop(100%, #820000));
+  background: -webkit-linear-gradient(#8c1515, #820000);
+  background: -moz-linear-gradient(#8c1515, #820000);
+  background: -o-linear-gradient(#8c1515, #820000);
+  background: linear-gradient(#8c1515, #820000);
+}
+
+.video_progress {
+  position:relative;
+  display:inline-block;
+  float:left;
+  width: 97.5%;
+  margin: 0 9px;
+  height:10px;
+  z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3F3C30', endColorstr='#565347');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3f3c30), color-stop(100%, #565347));
+  background: -webkit-linear-gradient(#3f3c30, #565347);
+  background: -moz-linear-gradient(#3f3c30, #565347);
+  background: -o-linear-gradient(#3f3c30, #565347);
+  background: linear-gradient(#3f3c30, #565347);
+}
+.video-play {
+  position:relative;
+  float:left;
+  display:inline-block;
+  z-index: 20;
+  cursor: pointer;
+}
+.arrow-right.pause {
+  width: 35px;
+  height: 35px;
+  background:transparent url(img/control-sprites-small.png) no-repeat -35px 0;
+}
+.arrow-right.play {
+  width: 35px;
+  height: 35px;
+  background:transparent url(img/control-sprites-small.png) no-repeat 0 0;
+}
